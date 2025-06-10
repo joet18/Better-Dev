@@ -1,0 +1,16 @@
+{
+  "name": "solorush-nike-landing",
+  "version": "1.0.0",
+  "description": "SOLORUSH Nike Shoes Landing Page - Pure HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000",
+    "preview": "python3 -m http.server 4173"
+  },
+  "keywords": ["nike", "shoes", "landing-page", "html", "css", "javascript"],
+  "author": "SOLORUSH",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

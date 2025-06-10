@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLORUSH Nike Shoes Landing Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span>SR</span>
+                    </div>
+                    <span class="logo-text">SOLORUSH</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button class="nav-btn active" data-page="home">Home</button>
+                    <button class="nav-btn" data-page="about">About Us</button>
+                    <button class="nav-btn" data-page="contact">Contact</button>
+                </nav>
+
+                <!-- CTA Button -->
+                <button class="cta-btn" data-page="signup">Sign up/Explore</button>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="nav-mobile">
+            <div class="nav-mobile-content">
+                <button class="nav-mobile-btn" data-page="home">Home</button>
+                <button class="nav-mobile-btn" data-page="about">About Us</button>
+                <button class="nav-mobile-btn" data-page="contact">Contact</button>
+                <button class="nav-mobile-btn cta" data-page="signup">Sign up/Explore</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-grid">
+                        <!-- Left Content -->
+                        <div class="hero-left">
+                            <div class="hero-content">
+                                <p class="hero-subtitle">Our New Collection</p>
+                                <h1 class="hero-title">
+                                    The New Arrival <span class="text-orange">Nike</span> Shoes
+                                </h1>
+                                <p class="hero-description">
+                                    Discover stylish Nike Quality
+                                </p>
+                                <button class="order-btn">ORDER NOW</button>
+
+                                <!-- Statistics -->
+                                <div class="stats">
+                                    <div class="stat">
+                                        <div class="stat-number">1K+</div>
+                                        <div class="stat-label">Per Week</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">500+</div>
+                                        <div class="stat-label">Per Month</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">250K+</div>
+                                        <div class="stat-label">Per Year</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Content - Interactive Shoe Gallery -->
+                        <div class="hero-right">
+                            <!-- Decorative Elements -->
+                            <div class="decoration decoration-1"></div>
+                            <div class="decoration decoration-2"></div>
+                            <div class="decoration decoration-3"></div>
+
+                            <!-- Main Shoe Display -->
+                            <div class="shoe-display">
+                                <div class="shoe-container">
+                                    <img id="main-shoe-image" src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nike Air Max 270" class="shoe-image">
+                                </div>
+                            </div>
+
+                            <!-- Shoe Thumbnails -->
+                            <div class="shoe-thumbnails">
+                                <button class="thumbnail active" data-shoe="0">
+                                    <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Nike Air Max 270">
+                                </button>
+                                <button class="thumbnail" data-shoe="1">
+                                    <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Nike React Infinity">
+                                </button>
+                                <button class="thumbnail" data-shoe="2">
+                                    <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Nike Zoom Pegasus">
+                                </button>
+                            </div>
+
+                            <!-- Selected Shoe Name -->
+                            <div class="shoe-name">
+                                <h3 id="selected-shoe-name">Nike Air Max 270</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <div class="features-grid">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3 class="feature-title">Free Shipping</h3>
+                            <p class="feature-description">Free shipping on orders over $100</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="feature-title">Quality Guarantee</h3>
+                            <p class="feature-description">100% authentic Nike products</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="feature-title">Customer Reviews</h3>
+                            <p class="feature-description">4.9/5 rating from 10,000+ customers</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="products">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Featured Collection</h2>
+                        <p class="section-description">
+                            Discover our most popular Nike shoes, carefully selected for style, comfort, and performance.
+                        </p>
+                    </div>
+                    
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Nike Air Max 270">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Nike Air Max 270</h3>
+                                <div class="product-footer">
+                                    <span class="product-price">$150</span>
+                                    <button class="add-to-cart">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Nike React Infinity">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Nike React Infinity</h3>
+                                <div class="product-footer">
+                                    <span class="product-price">$160</span>
+                                    <button class="add-to-cart">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Nike Zoom Pegasus">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Nike Zoom Pegasus</h3>
+                                <div class="product-footer">
+                                    <span class="product-price">$120</span>
+                                    <button class="add-to-cart">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="page">
+            <!-- Hero Section -->
+            <section class="page-hero">
+                <div class="container">
+                    <h1 class="page-hero-title">About SOLORUSH</h1>
+                    <p class="page-hero-subtitle">
+                        Your trusted partner in authentic Nike footwear since 2020
+                    </p>
+                </div>
+            </section>
+
+            <!-- Company Story -->
+            <section class="story">
+                <div class="container">
+                    <div class="story-grid">
+                        <div class="story-content">
+                            <h2 class="story-title">Our Story</h2>
+                            <p class="story-text">
+                                Founded in 2020, SOLORUSH began with a simple mission: to make authentic Nike shoes accessible to everyone. What started as a small online store has grown into a trusted destination for sneaker enthusiasts worldwide.
+                            </p>
+                            <p class="story-text">
+                                We believe that the right pair of shoes can transform not just your look, but your entire day. That's why we're committed to offering only genuine Nike products, backed by exceptional customer service and fast, reliable shipping.
+                            </p>
+                            <p class="story-text">
+                                Today, we're proud to serve over 250,000 customers annually, maintaining our commitment to quality, authenticity, and customer satisfaction.
+                            </p>
+                        </div>
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nike shoes collection">
+                            <div class="story-badge">
+                                <div class="badge-number">250K+</div>
+                                <div class="badge-text">Happy Customers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Values -->
+            <section class="values">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Our Values</h2>
+                        <p class="section-description">
+                            The principles that guide everything we do
+                        </p>
+                    </div>
+                    
+                    <div class="values-grid">
+                        <div class="value">
+                            <div class="value-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="value-title">Authenticity</h3>
+                            <p class="value-description">
+                                Every product we sell is 100% authentic Nike merchandise, sourced directly from authorized distributors.
+                            </p>
+                        </div>
+                        <div class="value">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="value-title">Customer First</h3>
+                            <p class="value-description">
+                                Your satisfaction is our priority. We go above and beyond to ensure every customer has an exceptional experience.
+                            </p>
+                        </div>
+                        <div class="value">
+                            <div class="value-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="value-title">Excellence</h3>
+                            <p class="value-description">
+                                From product selection to customer service, we maintain the highest standards in everything we do.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Customer Reviews -->
+            <section class="reviews">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">What Our Customers Say</h2>
+                        <p class="section-description">
+                            Don't just take our word for it - hear from our satisfied customers
+                        </p>
+                    </div>
+                    
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <i class="fas fa-quote-left review-quote"></i>
+                            <p class="review-text">
+                                "Amazing quality and fast shipping! The Nike Air Max 270 exceeded my expectations. Super comfortable for daily wear."
+                            </p>
+                            <div class="review-author">
+                                <div class="author-name">Sarah Johnson</div>
+                                <div class="author-product">Nike Air Max 270</div>
+                                <div class="author-date">2 weeks ago</div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <i class="fas fa-quote-left review-quote"></i>
+                            <p class="review-text">
+                                "Best online shoe store I've ever used. Authentic products, great customer service, and the website is so easy to navigate."
+                            </p>
+                            <div class="review-author">
+                                <div class="author-name">Michael Chen</div>
+                                <div class="author-product">Nike React Infinity</div>
+                                <div class="author-date">1 month ago</div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <i class="fas fa-quote-left review-quote"></i>
+                            <p class="review-text">
+                                "Love my new Nike Zoom Pegasus! Perfect for running and the delivery was incredibly fast. Will definitely order again."
+                            </p>
+                            <div class="review-author">
+                                <div class="author-name">Emily Rodriguez</div>
+                                <div class="author-product">Nike Zoom Pegasus</div>
+                                <div class="author-date">3 weeks ago</div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <i class="fas fa-quote-left review-quote"></i>
+                            <p class="review-text">
+                                "Outstanding customer service and product quality. The shoes arrived exactly as described and fit perfectly."
+                            </p>
+                            <div class="review-author">
+                                <div class="author-name">David Thompson</div>
+                                <div class="author-product">Nike Air Max 270</div>
+                                <div class="author-date">1 week ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Stats -->
+            <section class="stats-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">By the Numbers</h2>
+                        <p class="section-description">
+                            Our commitment to excellence reflected in our achievements
+                        </p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">250K+</div>
+                            <div class="stat-label">Customers Served</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9/5</div>
+                            <div class="stat-label">Customer Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Customer Support</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Authentic Products</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <!-- Hero Section -->
+            <section class="contact-hero">
+                <div class="container">
+                    <h1 class="page-hero-title">Get in Touch</h1>
+                    <p class="page-hero-subtitle">
+                        We're here to help with any questions about our products or services
+                    </p>
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="contact-section">
+                <div class="container">
+                    <div class="contact-grid">
+                        <!-- Contact Form -->
+                        <div class="contact-form-container">
+                            <h2 class="contact-title">Send us a Message</h2>
+                            <form class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-input" placeholder="John">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-input" placeholder="Doe">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-input" placeholder="john@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Subject</label>
+                                    <input type="text" class="form-input" placeholder="How can we help you?">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-textarea" rows="6" placeholder="Tell us more about your inquiry..."></textarea>
+                                </div>
+                                <button type="submit" class="form-submit">Send Message</button>
+                            </form>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="contact-info">
+                            <h2 class="contact-title">Contact Information</h2>
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3 class="contact-method-title">Phone</h3>
+                                        <p class="contact-method-info">+1 (555) 123-4567</p>
+                                        <p class="contact-method-note">Monday - Friday, 9AM - 6PM EST</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3 class="contact-method-title">Email</h3>
+                                        <p class="contact-method-info">support@solorush.com</p>
+                                        <p class="contact-method-note">We'll respond within 24 hours</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3 class="contact-method-title">Address</h3>
+                                        <p class="contact-method-info">
+                                            123 Sneaker Street<br>
+                                            New York, NY 10001<br>
+                                            United States
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3 class="contact-method-title">Business Hours</h3>
+                                        <div class="contact-method-info">
+                                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                            <p>Saturday: 10:00 AM - 4:00 PM</p>
+                                            <p>Sunday: Closed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                        <p class="section-description">
+                            Quick answers to common questions about our products and services
+                        </p>
+                    </div>
+                    
+                    <div class="faq-grid">
+                        <div class="faq-column">
+                            <div class="faq-item">
+                                <h3 class="faq-question">Are all your Nike shoes authentic?</h3>
+                                <p class="faq-answer">Yes, we guarantee 100% authenticity on all our Nike products. We source directly from authorized Nike distributors.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="faq-question">What is your return policy?</h3>
+                                <p class="faq-answer">We offer a 30-day return policy for unworn items in original packaging. Returns are free for orders over $100.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="faq-question">How long does shipping take?</h3>
+                                <p class="faq-answer">Standard shipping takes 3-5 business days. Express shipping (1-2 days) is available for an additional fee.</p>
+                            </div>
+                        </div>
+                        <div class="faq-column">
+                            <div class="faq-item">
+                                <h3 class="faq-question">Do you offer international shipping?</h3>
+                                <p class="faq-answer">Currently, we ship within the United States only. International shipping will be available soon.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="faq-question">Can I track my order?</h3>
+                                <p class="faq-answer">Yes, you'll receive a tracking number via email once your order ships. You can track your package in real-time.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="faq-question">Do you have a size guide?</h3>
+                                <p class="faq-answer">Yes, we provide detailed size guides for all Nike models. You can find them on each product page.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sign Up Page -->
+        <div id="signup-page" class="page">
+            <!-- Hero Section -->
+            <section class="signup-hero">
+                <div class="container">
+                    <h1 class="page-hero-title">Join SOLORUSH</h1>
+                    <p class="page-hero-subtitle">
+                        Create your account and get exclusive access to new releases and member-only deals
+                    </p>
+                </div>
+            </section>
+
+            <!-- Sign Up Form -->
+            <section class="signup-section">
+                <div class="container">
+                    <div class="signup-container">
+                        <div class="signup-header">
+                            <h2 class="signup-title">Create Your Account</h2>
+                            <p class="signup-subtitle">
+                                Join thousands of satisfied customers and get access to exclusive benefits
+                            </p>
+                        </div>
+
+                        <form class="signup-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">First Name *</label>
+                                    <input type="text" class="form-input" placeholder="John" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Last Name *</label>
+                                    <input type="text" class="form-input" placeholder="Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-input" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Password *</label>
+                                <input type="password" class="form-input" placeholder="Create a strong password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Confirm Password *</label>
+                                <input type="password" class="form-input" placeholder="Confirm your password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-input" placeholder="+1 (555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" class="form-input">
+                            </div>
+
+                            <div class="form-checkboxes">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="newsletter" class="form-checkbox">
+                                    <label for="newsletter" class="checkbox-label">
+                                        Subscribe to our newsletter for exclusive deals and new product announcements
+                                    </label>
+                                </div>
+
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="terms" class="form-checkbox" required>
+                                    <label for="terms" class="checkbox-label">
+                                        I agree to the <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Privacy Policy</a> *
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="signup-submit">
+                                <span>Create Account</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+
+                        <div class="signup-footer">
+                            <p class="signin-link">
+                                Already have an account? 
+                                <button class="link">Sign In</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits Section -->
+            <section class="benefits">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Member Benefits</h2>
+                        <p class="section-description">
+                            Enjoy exclusive perks when you join the SOLORUSH community
+                        </p>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit">
+                            <div class="benefit-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="benefit-title">Early Access</h3>
+                            <p class="benefit-description">Get first access to new Nike releases and limited edition drops</p>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3 class="benefit-title">Free Shipping</h3>
+                            <p class="benefit-description">Enjoy free shipping on all orders, no minimum purchase required</p>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="benefit-title">Exclusive Deals</h3>
+                            <p class="benefit-description">Access member-only discounts and special promotional offers</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <span>SR</span>
+                        </div>
+                        <span class="footer-logo-text">SOLORUSH</span>
+                    </div>
+                    <p class="footer-description">
+                        Your premier destination for authentic Nike shoes. We bring you the latest collections with unmatched quality and style.
+                    </p>
+                    <div class="footer-contact">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><button class="footer-link" data-page="home">Home</button></li>
+                        <li><button class="footer-link" data-page="about">About Us</button></li>
+                        <li><button class="footer-link" data-page="contact">Contact</button></li>
+                        <li><button class="footer-link" data-page="signup">Sign Up</button></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Shipping Info</a></li>
+                        <li><a href="#" class="footer-link">Returns</a></li>
+                        <li><a href="#" class="footer-link">Size Guide</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 SOLORUSH. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="footer-legal-link">Terms of Service</a>
+                    <a href="#" class="footer-legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
